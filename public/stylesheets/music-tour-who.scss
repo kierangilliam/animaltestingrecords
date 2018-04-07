@@ -1,0 +1,66 @@
+@import 'variables';
+
+$stroke-width: 3;
+
+p {
+   @include stroke-and-shadow(2, black, black);
+}
+
+a {
+    color: darken($light-blue, 20%) !important;
+}
+
+#music {    
+    h2 {
+        @include stroke-and-shadow($stroke-width, $red, $dark-red);
+    }
+}
+
+#tour {
+    h2 {
+        @include stroke-and-shadow($stroke-width, $green, $dark-green);
+    }
+}
+
+#who {
+    h2 {
+        @include stroke-and-shadow($stroke-width, $orange, $dark-orange);
+    }
+}
+
+/* Card to display songs */
+.song-card {
+    
+    background-color: white;
+
+    -webkit-box-shadow: 10px 9px 0px -4px rgba(0,0,0,0.05);
+    -moz-box-shadow: 10px 9px 0px -4px rgba(0,0,0,0.05);
+    box-shadow: 10px 9px 0px -4px rgba(0,0,0,0.05);
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding: 15px;    
+    width: 30%;
+
+    h3 {
+        font-size: 35px;
+        color: white;
+        @include stroke-and-shadow($stroke-width, $orange, $dark-orange);
+    }
+
+    @media screen and (max-width: $screen-small) {
+
+      width: auto;
+      margin-left: 5px;
+      margin-right: 5px;
+
+      h3, h4 {
+        font-size: 35px;
+      }
+
+      p {
+          font-size: 18px !important;
+      }
+    }
+}

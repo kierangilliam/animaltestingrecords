@@ -1,0 +1,43 @@
+/* Colors */
+/* Screen sizes */
+p {
+  text-shadow: -2px -2px 0 black, -2px -1px 0 black, -2px 0px 0 black, -2px 1px 0 black, -2px 2px 0 black, -1px -2px 0 black, -1px -1px 0 black, -1px 0px 0 black, -1px 1px 0 black, -1px 2px 0 black, 0px -2px 0 black, 0px -1px 0 black, 0px 0px 0 black, 0px 1px 0 black, 0px 2px 0 black, 1px -2px 0 black, 1px -1px 0 black, 1px 0px 0 black, 1px 1px 0 black, 1px 2px 0 black, 2px -2px 0 black, 2px -1px 0 black, 2px 0px 0 black, 2px 1px 0 black, 2px 2px 0 black, 4px 3.5px 0px black, 3.5px 4px 0px black; }
+
+a {
+  color: #6bc5ff !important; }
+
+#music h2 {
+  text-shadow: -3px -3px 0 #fc213f, -3px -2px 0 #fc213f, -3px -1px 0 #fc213f, -3px 0px 0 #fc213f, -3px 1px 0 #fc213f, -3px 2px 0 #fc213f, -3px 3px 0 #fc213f, -2px -3px 0 #fc213f, -2px -2px 0 #fc213f, -2px -1px 0 #fc213f, -2px 0px 0 #fc213f, -2px 1px 0 #fc213f, -2px 2px 0 #fc213f, -2px 3px 0 #fc213f, -1px -3px 0 #fc213f, -1px -2px 0 #fc213f, -1px -1px 0 #fc213f, -1px 0px 0 #fc213f, -1px 1px 0 #fc213f, -1px 2px 0 #fc213f, -1px 3px 0 #fc213f, 0px -3px 0 #fc213f, 0px -2px 0 #fc213f, 0px -1px 0 #fc213f, 0px 0px 0 #fc213f, 0px 1px 0 #fc213f, 0px 2px 0 #fc213f, 0px 3px 0 #fc213f, 1px -3px 0 #fc213f, 1px -2px 0 #fc213f, 1px -1px 0 #fc213f, 1px 0px 0 #fc213f, 1px 1px 0 #fc213f, 1px 2px 0 #fc213f, 1px 3px 0 #fc213f, 2px -3px 0 #fc213f, 2px -2px 0 #fc213f, 2px -1px 0 #fc213f, 2px 0px 0 #fc213f, 2px 1px 0 #fc213f, 2px 2px 0 #fc213f, 2px 3px 0 #fc213f, 3px -3px 0 #fc213f, 3px -2px 0 #fc213f, 3px -1px 0 #fc213f, 3px 0px 0 #fc213f, 3px 1px 0 #fc213f, 3px 2px 0 #fc213f, 3px 3px 0 #fc213f, 6px 5.25px 0px #b2112e, 5.25px 6px 0px #b2112e; }
+
+#tour h2 {
+  text-shadow: -3px -3px 0 #079d7c, -3px -2px 0 #079d7c, -3px -1px 0 #079d7c, -3px 0px 0 #079d7c, -3px 1px 0 #079d7c, -3px 2px 0 #079d7c, -3px 3px 0 #079d7c, -2px -3px 0 #079d7c, -2px -2px 0 #079d7c, -2px -1px 0 #079d7c, -2px 0px 0 #079d7c, -2px 1px 0 #079d7c, -2px 2px 0 #079d7c, -2px 3px 0 #079d7c, -1px -3px 0 #079d7c, -1px -2px 0 #079d7c, -1px -1px 0 #079d7c, -1px 0px 0 #079d7c, -1px 1px 0 #079d7c, -1px 2px 0 #079d7c, -1px 3px 0 #079d7c, 0px -3px 0 #079d7c, 0px -2px 0 #079d7c, 0px -1px 0 #079d7c, 0px 0px 0 #079d7c, 0px 1px 0 #079d7c, 0px 2px 0 #079d7c, 0px 3px 0 #079d7c, 1px -3px 0 #079d7c, 1px -2px 0 #079d7c, 1px -1px 0 #079d7c, 1px 0px 0 #079d7c, 1px 1px 0 #079d7c, 1px 2px 0 #079d7c, 1px 3px 0 #079d7c, 2px -3px 0 #079d7c, 2px -2px 0 #079d7c, 2px -1px 0 #079d7c, 2px 0px 0 #079d7c, 2px 1px 0 #079d7c, 2px 2px 0 #079d7c, 2px 3px 0 #079d7c, 3px -3px 0 #079d7c, 3px -2px 0 #079d7c, 3px -1px 0 #079d7c, 3px 0px 0 #079d7c, 3px 1px 0 #079d7c, 3px 2px 0 #079d7c, 3px 3px 0 #079d7c, 6px 5.25px 0px #006757, 5.25px 6px 0px #006757; }
+
+#who h2 {
+  text-shadow: -3px -3px 0 #FF9920, -3px -2px 0 #FF9920, -3px -1px 0 #FF9920, -3px 0px 0 #FF9920, -3px 1px 0 #FF9920, -3px 2px 0 #FF9920, -3px 3px 0 #FF9920, -2px -3px 0 #FF9920, -2px -2px 0 #FF9920, -2px -1px 0 #FF9920, -2px 0px 0 #FF9920, -2px 1px 0 #FF9920, -2px 2px 0 #FF9920, -2px 3px 0 #FF9920, -1px -3px 0 #FF9920, -1px -2px 0 #FF9920, -1px -1px 0 #FF9920, -1px 0px 0 #FF9920, -1px 1px 0 #FF9920, -1px 2px 0 #FF9920, -1px 3px 0 #FF9920, 0px -3px 0 #FF9920, 0px -2px 0 #FF9920, 0px -1px 0 #FF9920, 0px 0px 0 #FF9920, 0px 1px 0 #FF9920, 0px 2px 0 #FF9920, 0px 3px 0 #FF9920, 1px -3px 0 #FF9920, 1px -2px 0 #FF9920, 1px -1px 0 #FF9920, 1px 0px 0 #FF9920, 1px 1px 0 #FF9920, 1px 2px 0 #FF9920, 1px 3px 0 #FF9920, 2px -3px 0 #FF9920, 2px -2px 0 #FF9920, 2px -1px 0 #FF9920, 2px 0px 0 #FF9920, 2px 1px 0 #FF9920, 2px 2px 0 #FF9920, 2px 3px 0 #FF9920, 3px -3px 0 #FF9920, 3px -2px 0 #FF9920, 3px -1px 0 #FF9920, 3px 0px 0 #FF9920, 3px 1px 0 #FF9920, 3px 2px 0 #FF9920, 3px 3px 0 #FF9920, 6px 5.25px 0px #ce7736, 5.25px 6px 0px #ce7736; }
+
+/* Card to display songs */
+.song-card {
+  background-color: white;
+  -webkit-box-shadow: 10px 9px 0px -4px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 10px 9px 0px -4px rgba(0, 0, 0, 0.05);
+  box-shadow: 10px 9px 0px -4px rgba(0, 0, 0, 0.05);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  padding: 15px;
+  width: 30%; }
+  .song-card h3 {
+    font-size: 35px;
+    color: white;
+    text-shadow: -3px -3px 0 #FF9920, -3px -2px 0 #FF9920, -3px -1px 0 #FF9920, -3px 0px 0 #FF9920, -3px 1px 0 #FF9920, -3px 2px 0 #FF9920, -3px 3px 0 #FF9920, -2px -3px 0 #FF9920, -2px -2px 0 #FF9920, -2px -1px 0 #FF9920, -2px 0px 0 #FF9920, -2px 1px 0 #FF9920, -2px 2px 0 #FF9920, -2px 3px 0 #FF9920, -1px -3px 0 #FF9920, -1px -2px 0 #FF9920, -1px -1px 0 #FF9920, -1px 0px 0 #FF9920, -1px 1px 0 #FF9920, -1px 2px 0 #FF9920, -1px 3px 0 #FF9920, 0px -3px 0 #FF9920, 0px -2px 0 #FF9920, 0px -1px 0 #FF9920, 0px 0px 0 #FF9920, 0px 1px 0 #FF9920, 0px 2px 0 #FF9920, 0px 3px 0 #FF9920, 1px -3px 0 #FF9920, 1px -2px 0 #FF9920, 1px -1px 0 #FF9920, 1px 0px 0 #FF9920, 1px 1px 0 #FF9920, 1px 2px 0 #FF9920, 1px 3px 0 #FF9920, 2px -3px 0 #FF9920, 2px -2px 0 #FF9920, 2px -1px 0 #FF9920, 2px 0px 0 #FF9920, 2px 1px 0 #FF9920, 2px 2px 0 #FF9920, 2px 3px 0 #FF9920, 3px -3px 0 #FF9920, 3px -2px 0 #FF9920, 3px -1px 0 #FF9920, 3px 0px 0 #FF9920, 3px 1px 0 #FF9920, 3px 2px 0 #FF9920, 3px 3px 0 #FF9920, 6px 5.25px 0px #ce7736, 5.25px 6px 0px #ce7736; }
+  @media screen and (max-width: 500px) {
+    .song-card {
+      width: auto;
+      margin-left: 5px;
+      margin-right: 5px; }
+      .song-card h3, .song-card h4 {
+        font-size: 35px; }
+      .song-card p {
+        font-size: 18px !important; } }
+
+/*# sourceMappingURL=music-tour-who.css.map */

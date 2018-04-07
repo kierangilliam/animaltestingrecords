@@ -1,0 +1,32 @@
+/* Colors */
+$orange: #FF9920;
+$dark-orange: #ce7736; 
+$green: #079d7c;
+$dark-green: #006757;
+$red: #fc213f;
+$dark-red: #b2112e;
+$light-blue: #d1edff;
+$dark-blue: #2F486E;
+
+/* Screen sizes */
+$screen-small: 500px;
+$screen-large: 1200px;
+
+@mixin text-shadow($color) { text-shadow: 3px 3px 0px $color; }
+@mixin text-stroke($color, $width) { -webkit-text-stroke: $width $color; text-stroke-color: $color; }
+
+@function stroke($stroke, $color) {
+  $shadow: ();
+  $from: $stroke*-1;
+  @for $i from $from through $stroke {
+   @for $j from $from through $stroke {
+      $shadow: append($shadow, $i*1px $j*1px 0 $color, comma);
+    }
+  }
+  @return $shadow;
+}
+
+@mixin stroke-and-shadow($stroke, $color, $dark-color) {
+  text-shadow: stroke($stroke, $color), 
+  $stroke*2px $stroke*1.75px 0px $dark-color, $stroke*1.75px $stroke*2px 0px $dark-color;
+}
