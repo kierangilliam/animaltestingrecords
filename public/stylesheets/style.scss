@@ -101,9 +101,7 @@ p, a {
     }
 
     .center-text {
-      p {
-        text-align: center !important;
-      }
+      text-align: center !important;
     }
 
     @media screen and (max-width: $screen-small) {
