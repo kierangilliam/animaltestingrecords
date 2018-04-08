@@ -6,10 +6,6 @@ a {
     color: darken($light-blue, 20%) !important;
 }
 
-p {
-    
-}
-
 #blog {    
     h2 {
         @include stroke-and-shadow($stroke-width, $red, $dark-red);

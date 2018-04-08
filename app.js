@@ -7,7 +7,6 @@ var bodyParser = require('body-parser');
 var sassMiddleware = require('node-sass-middleware');
 
 var index = require('./routes/index');
-var users = require('./routes/users');
 var music = require('./routes/music');
 var tour = require('./routes/tour');
 var who = require('./routes/who');
@@ -18,6 +17,12 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
+var hbs = require('hbs');
+hbs.registerHelper('breaklines', function(text) {
+  text = hbs.Utils.escapeExpression(text);
+  text = text.replace(/(\r\n|\n|\r)/gm, '<br><br>');
+  return new hbs.SafeString(text);
+});
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -34,7 +39,6 @@ app.use(sassMiddleware({
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
-app.use('/users', users);
 app.use('/music', music);
 app.use('/tour', tour);
 app.use('/who', who);
