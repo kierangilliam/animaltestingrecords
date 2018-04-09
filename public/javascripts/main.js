@@ -13,7 +13,8 @@ function showReturnHome () {
         $('#stripes #red #home-button').animate({
             opacity: '100',
             height: '50px'
-        }, { duration: 300, easing: 'easeInOutBack' });
+        }, { duration: 300, easing: 'easeInOutBack' })
+        .css('display', 'inline');
 
         $('#stripes #red').animate({
             bottom: 0,
@@ -27,11 +28,12 @@ function hideReturnHome () {
 
     if (showingHomeButton == true) {
         showingHomeButton = false;
-
+        
         $('#stripes #red #home-button').animate({
             opacity: '0',
             height: '0px'
-        }, { duration: 500, easing: 'easeInOutBack' });
+        }, { duration: 500, easing: 'easeInOutBack' })
+        .css('display', 'none');
 
         $('#stripes #red').animate({
             bottom: stripeHeight * 4,
