@@ -2,8 +2,8 @@
 
 $stroke-width: 3;
 
-p {
-   @include stroke-and-shadow(2, black, black);
+p, a {
+    font-size: 35px;
 }
 
 a {
@@ -26,6 +26,11 @@ a {
 
 #tour {
     h2 {
+        @include stroke-and-shadow($stroke-width, $green, $dark-green);
+    }
+
+    .tour-title {
+        color: white;
         @include stroke-and-shadow($stroke-width, $green, $dark-green);
     }
 }

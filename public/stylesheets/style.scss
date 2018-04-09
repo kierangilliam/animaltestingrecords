@@ -48,6 +48,7 @@ body {
     #home-button {
       cursor: pointer;
       opacity: 0;
+      display: none;
       color: white;
       position: fixed;
       left: 46%;
@@ -75,7 +76,6 @@ h2 {
 p, a {
   font-size: 35px;
   color: white;
-  /*@include stroke-and-shadow(2, black, black);*/
 }
 
 .grow, .rotate-left, .rotate-right { transition: all .2s ease-in-out; }
@@ -106,15 +106,23 @@ p, a {
         font-size: 35px;
     }
 
+    p, a {
+      font-size: 20px !important;       
+    }
+
     p {
         font-family: "Comic Sans MS", sans-serif;
-        color: black !important;
-        font-size: 20px !important;
-        text-align: left;
+        color: black !important;         
     }
 
     .center-text {
       text-align: center !important;
+    }
+
+    .left-text {      
+      p {
+        text-align: left !important;
+      }
     }
 
     @media screen and (max-width: $screen-small) {
