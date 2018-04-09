@@ -23,7 +23,7 @@
         },
         {
             "title" : "Summary Scorecard",
-            "html" : "<p style='text-align: center'>The Flinstone Scale: 6/Flinstone\nChewability: 6.45\nGrants immunity: Yes\nGummy chemist competence: Low\nSoul-sucking corporation? Yes\nCan you pick these up at your local 7-11? Probably not</p>"
+            "html" : "<p style='text-align: center'>The Flinstone Scale: 6/Flinstone<br>Chewability: 6.45<br>Grants immunity: Yes<br>Gummy chemist competence: Low<br>Soul-sucking corporation? Yes<br>Can you pick these up at your local 7-11? Probably not</p>"
         }
     ]    
 }]
