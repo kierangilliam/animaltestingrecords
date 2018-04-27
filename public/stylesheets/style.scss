@@ -15,9 +15,10 @@ body {
   background-size: 10em; 
 }
 
-#stripes {  
+#stripes {    
 
   #orange, #green, #red {
+    z-index: 20;
     position: fixed;    
     width: 110%; 
     left: -5px;
@@ -51,7 +52,8 @@ body {
       display: none;
       color: white;
       position: fixed;
-      left: 46%;
+      left: 50%;
+      transform: translateX(-50%);
       font-size: 30px;
       -webkit-margin-before: 0em;
       -webkit-margin-after: 10px;
