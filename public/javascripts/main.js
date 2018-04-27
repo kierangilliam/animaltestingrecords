@@ -55,8 +55,12 @@ $stripes.click(function () {
         clearInterval(stripesResetInterval);
         stripesResetInterval = setTimeout(function () { resetStripes(true) }, 2000);
 
-        // If $secret height is reached, show secret
-        // TODO
+        // If orange gets to screen height is reached, show secret
+        if ($(window).height() < $('#stripes #orange').height()) {
+            $.post('secret/code', function (res) {
+                window.location.href = '/secret/' + res.code;
+            });
+        }
 
         $stripes.children().each(function() {
             // Grow each stripe by a factor of 1.5

@@ -11,6 +11,7 @@ var music = require('./routes/music');
 var tour = require('./routes/tour');
 var who = require('./routes/who');
 var blog = require('./routes/blog');
+var secret = require('./routes/secret');
 
 var app = express();
 
@@ -43,6 +44,7 @@ app.use('/music', music);
 app.use('/tour', tour);
 app.use('/who', who);
 app.use('/blog', blog);
+app.use('/secret', secret);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
