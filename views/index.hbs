@@ -1,10 +1,24 @@
 <div id="main">
 
-<h2 onclick="javascript:transitionToPage('music')" id="music" class="grow rotate-right">Music</h2>
-<h2 onclick="javascript:transitionToPage('tour')" id="tour" class="grow rotate-left">Tour Dates</h2>
-<h2 onclick="javascript:transitionToPage('who')" id="who" class="grow rotate-right">Who is 7-11 Jesus?</h2>
-<h2 onclick="javascript:transitionToPage('blog')" id="blog" class="grow rotate-right">Blog</h2>
+  <div class="section-title">
+    <!-- # TODO section titles rotate and pop out an animal at hover -->
+    <h2>MUSIC</h2>
+  </div>
+  <div id="albums">
+      {{#each artists}}
+        {{#each albums}}
+          <div class="card-album album" id={{id}} onclick="location.href='www.animaltestingrecords.co/albums/{{id}}';">
+            <div class="album-art">
+              <img class="album-art-image" src="{{image_src}}">
+            </div>
+            <p class="artist-name">{{../name}}</p>
+            <p class="album-name">{{name}}</p>
+          </div>
+        {{/each}}
+      {{/each}}
+  </div>
 
 </div>
 
 <link rel='stylesheet' href='/stylesheets/index.css' />
+<link rel='stylesheet' href='/stylesheets/music.css' />

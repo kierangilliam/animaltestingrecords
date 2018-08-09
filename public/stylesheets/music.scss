@@ -1,0 +1,79 @@
+@import 'variables';
+
+#albums {
+  line-height: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .card-album {
+    cursor: pointer;
+    background-color: white;
+    width: 100%;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+
+    font-size: 20px !important;
+    color: black !important;
+
+    @media (min-width: 48rem) {
+      flex-basis: 49%;
+    }
+
+    @media (min-width: 62rem) {
+      flex-basis: 15.5%;
+    }
+
+    &:before {
+      content: "";
+      float: left;
+      padding-top: 100%;
+    }
+
+    .album-art, .artist-name, .album-name {
+      padding-top: 0;
+      padding-bottom: 0;
+      -webkit-margin-before: 0em;
+      -webkit-margin-after: 0em;
+      -webkit-margin-start: 0px;
+      -webkit-margin-end: 0px;
+    }
+    .artist-name, .album-name {
+      font-weight: bold;
+    }
+    .album-art {
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+
+      .album-art-image {
+        width: 245px;
+        height: 245px;
+        transition: transform 0.3s ease-in-out;
+        -o-transition: transform 0.3s ease-in-out;
+        -ms-transition: transform 0.3s ease-in-out;
+        -moz-transition: transform 0.3s ease-in-out;
+        -webkit-transition: transform 0.3s ease-in-out;
+      }
+      .album-art-image:hover {
+        transform: scale(1.05);
+        transition-duration: 0.3s;
+      }
+    }
+    .artist-name {
+      font-weight: bolder;
+      margin-left: 10px;
+      font-size: 1.1rem !important;
+    }
+    .album-name {
+      margin-left: 10px;
+      padding-left: 8px;
+      padding-right: 10px;
+      display: inline-block;
+      background-color: #528ff2;
+      font-style: italic;
+      color: white;
+      font-size: 11px !important;
+    }
+  }
+}

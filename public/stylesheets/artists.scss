@@ -1,0 +1,76 @@
+.artists {
+  line-height: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .artist {
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 48rem) {
+      flex-basis: 49%;
+    }
+
+    @media (min-width: 62rem) {
+      flex-basis: 20.5%;
+    }
+
+    .artist-image-wrapper, .name, .location {
+      padding-top: 0;
+      padding-bottom: 0;
+      -webkit-margin-before: 0em;
+      -webkit-margin-after: 0em;
+      -webkit-margin-start: 0px;
+      -webkit-margin-end: 0px;
+    }
+    .artist-image-wrapper {
+      flex: 7;
+      overflow: hidden;
+
+      height: 170px;
+      width: 245px;
+      margin-bottom: 10px;
+
+      .artist-image:hover {
+        transform: scale(1.05);
+        transition-duration: 0.3s;
+      }
+
+      .artist-image {
+        transition: transform 0.3s ease-in-out;
+        -o-transition: transform 0.3s ease-in-out;
+        -ms-transition: transform 0.3s ease-in-out;
+        -moz-transition: transform 0.3s ease-in-out;
+        -webkit-transition: transform 0.3s ease-in-out;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    .info {
+      flex: 1;
+
+      .name {
+        font-family: 'Oswald', sans-serif;
+        padding: 5px;
+        padding-left: 15px;
+        background-color: #ef3f3f;
+        text-transform: uppercase;
+        color: white;
+        font-size: 1.1em;
+        font-weight: bold;
+      }
+      .location {
+        display: inline;
+        padding: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        background-color: #f5f5f5;
+        color: #4c4c4c;
+        font-size: .7em;
+      }
+    }
+  }
+}

@@ -3,7 +3,8 @@
 <html>
   <head>
     <title>{{title}}</title>
-    <link href="https://fonts.googleapis.com/css?family=Knewave|Sigmar+One|Sniglet:800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Jacques+Francois" rel="stylesheet">
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -13,14 +14,30 @@
     src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
     integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
     crossorigin="anonymous"></script>
-  </head> 
-  <body>        
-    {{{body}}}
-    <div id="stripes">
-      <div id="orange"></div>
-      <div id="green"></div>
-      <div id="red"><h6 onclick="javascript:transitionToPage('')" id="home-button">Home</h6></div>
+  </head>
+  <body>
+    <div class="header">
+      <ul id="headmast">
+        <h1><a href="/">ANIMAL TESTING RECORDS</a></h1>
+      </ul>
+      <ul class="navigation">
+        <div id="artists" class="header-link">
+          <a href="/artists"><h3>ARTISTS</h3></a>
+          <img src="images/animals/snek.png"></img>
+        </div>
+        <!-- <a href="/blog"><h3 id="">Blog</h3></a> -->
+        <div id="contact" class="header-link">
+          <a href="/contact"><h3>CONTACT</h3></a>
+          <img src="images/animals/monkey.png"></img>
+        </div>
+      </ul>
     </div>
+    <div class="wrapper">
+      {{{body}}}
+    </div>
+    <footer class="footer">
+
+    </footer>
   </body>
   <script src="../javascripts/main.js"></script>
 </html>

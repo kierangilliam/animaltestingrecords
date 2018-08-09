@@ -4,91 +4,186 @@ $stripe-height: 10px;
 
 body {
   font: 55px;
-  padding-bottom: 50px;
-  font-family: 'Sniglet', cursive;
-  background: $light-blue;
+  font-family: 'Jacques Francois', serif;
   margin: 0px;
-  overflow-x: hidden; 
-  text-align: center;
-  background-repeat: repeat;
-  background-image: url("/images/slushee-background.png");
-  background-size: 10em; 
-}
-
-#stripes {    
-
-  #orange, #green, #red {
-    z-index: 20;
-    position: fixed;    
-    width: 110%; 
-    left: -5px;
-    height: $stripe-height;
-    border-style: solid;
-  }
-
-  #orange {
-    bottom: $stripe-height*4;
-    border-color: $orange;
-    background-color: $orange;
-    border-bottom: $stripe-height solid $dark-orange;
-  }
-
-  #green {
-    bottom: $stripe-height*2;
-    border-color: $green;
-    background-color: $green;
-    border-bottom: $stripe-height solid $dark-green;
-  }
-
-  #red {
-    bottom: -$stripe-height*.30;
-    border-color: $red;
-    background-color: $red;
-    border-bottom: $stripe-height solid $dark-red;
-
-    #home-button {
-      cursor: pointer;
-      opacity: 0;
-      display: none;
-      color: white;
-      position: fixed;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 30px;
-      -webkit-margin-before: 0em;
-      -webkit-margin-after: 10px;
-      -webkit-margin-start: 0px;
-      -webkit-margin-end: 0px;
-    }
-  }
+  overflow-x: hidden;
 }
 
 a         { text-decoration: none; }
 a:visited { color: inherit;        }
 
-h2 {
-  font-size: 65px;
-  color: white;
-  -webkit-margin-before: 0.55em;
-  -webkit-margin-after: 0.55em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 6em;
+  padding-left: 3.3em;
+  padding-right: 3.3em;
 }
 
-p, a {
-  font-size: 35px;
-  color: white;
+/* We tell all items to be 100% width, via flex-basis */
+.wrapper > * {
+  flex: 1 100%;
+
+  @media (min-width: 48rem) {
+    padding-left: 4.3em;
+    padding-right: 4.3em;
+  }
 }
 
-.grow, .rotate-left, .rotate-right { transition: all .2s ease-in-out; }
+.header {
 
-.grow:hover { transform: scale(1.25); }
-.rotate-left:hover  { transform: rotate(-7deg); }
-.rotate-right:hover { transform: rotate(7deg); }
+  font-family: 'Oswald', sans-serif;
+
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 50px;
+  z-index: 100;
+
+  -webkit-box-shadow: 0px 5px 0px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 5px 0px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px 5px 0px 0px rgba(0,0,0,0.1);
+
+  background: #1c1c1c;//#e1e6ef;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  justify-content: space-between;
+
+  #headmast {
+    color: white;
+    margin-left: 80px;
+    -webkit-margin-before: 0em !important;
+    -webkit-margin-after: 0em !important;
+    display: flex;
+    h1 {
+      font-size: 23px;
+      margin: auto;
+    }
+  }
+
+  .navigation {
+    text-align: center;
+    padding: 10px;
+    margin-right: 80px;
+    -webkit-margin-before: 0em !important;
+    -webkit-margin-after: 0em !important;
+
+    list-style: none;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+
+    h3 {
+      -webkit-margin-before: 0em !important;
+      -webkit-margin-after: 0em !important;
+      margin: auto;
+    }
+
+    .header-link {
+      display: block;
+      padding-left: 1em;
+      padding-right: 1em;
+      display: flex;
+
+      a {
+        margin: auto;
+        text-decoration: none;
+        color: white;
+      }
+      img {
+        margin-left: -25px;
+        position: absolute;
+        bottom: 100%;
+        width: 100px;
+        z-index: -100;
+        background-color: #528ff2;
+        transition: .5s ease;
+      }
+      a:hover {
+        color: darken(#e1e6ef, 4%);
+        color: black;
+      }
+      &:hover img {
+        bottom: -70%;
+      }
+    }
+  }
+
+  @media all and (max-width: 800px) {
+    .navigation {
+      justify-content: space-around;
+    }
+  }
+
+  @media all and (max-width: 600px) {
+    .navigation {
+      -webkit-flex-flow: column wrap;
+      flex-flow: column wrap;
+      padding: 0;
+    }
+
+    .navigation a {
+      text-align: center;
+      padding: 10px;
+      border-top: 1px solid rgba(255,255,255,0.3);
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+  }
+}
+
+/* Medium screens */
+@media all and (min-width: 600px) {
+  /* We tell both sidebars to share a row */
+  .aside { flex: 1 auto; }
+}
+
+/* Large screens */
+@media all and (min-width: 800px) {
+  #music { flex: 2 0px; }
+  #music
+  .footer  { order: 4; }
+}
+
+.section-title {
+  font-family: 'Oswald', sans-serif;
+  border-bottom: 2px solid black;
+  margin-bottom: 15px;
+  padding-left: 0;
+  padding-right: 0;
+
+  h2 {
+    border: 2px solid rgba(0,0,0,0.05);
+    -webkit-box-shadow: -5px -5px 0px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: -5px -5px 0px 0px rgba(0,0,0,0.1);
+    box-shadow: -5px -5px 0px 0px rgba(0,0,0,0.1);
+    padding-top: 0;
+    padding-bottom: 0;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    background-color: #1c1c1c;
+    font-weight: 500;
+  }
+}
 
 /* Card to display information like a blog post */
 .card {
-    
+
     background-color: white;
 
     -webkit-box-shadow: 10px 9px 0px -4px rgba(0,0,0,0.05);
@@ -98,7 +193,7 @@ p, a {
     margin-left: 65px;
     margin-right: 65px;
     margin-bottom: 35px;
-    padding: 30px;    
+    padding: 30px;
 
     h3 {
         font-size: 45px;
@@ -109,19 +204,18 @@ p, a {
     }
 
     p, a {
-      font-size: 20px !important;       
+      font-size: 20px !important;
     }
 
     p {
-        font-family: "Comic Sans MS", sans-serif;
-        color: black !important;         
+        color: black !important;
     }
 
     .center-text {
       text-align: center !important;
     }
 
-    .left-text {      
+    .left-text {
       p {
         text-align: left !important;
       }
@@ -141,4 +235,10 @@ p, a {
     }
 }
 
-
+.footer {
+  background-color: black;
+  margin-top: 3em;
+  height: 15em;
+  bottom: 0;
+  display: block;
+}

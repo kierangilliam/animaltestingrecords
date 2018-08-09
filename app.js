@@ -7,11 +7,8 @@ var bodyParser = require('body-parser');
 var sassMiddleware = require('node-sass-middleware');
 
 var index = require('./routes/index');
-var music = require('./routes/music');
-var tour = require('./routes/tour');
-var who = require('./routes/who');
+var artists = require('./routes/artists');
 var blog = require('./routes/blog');
-var secret = require('./routes/secret');
 
 var app = express();
 
@@ -40,11 +37,8 @@ app.use(sassMiddleware({
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
-app.use('/music', music);
-app.use('/tour', tour);
-app.use('/who', who);
+app.use('/artists', artists);
 app.use('/blog', blog);
-app.use('/secret', secret);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
