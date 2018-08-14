@@ -1,6 +1,7 @@
 @import 'variables';
 
 #albums {
+  z-index: 100;
   line-height: 28px;
   display: flex;
   flex-wrap: wrap;
@@ -44,9 +45,11 @@
     .album-art {
       width: 100%;
       position: relative;
-      overflow: hidden;
+      overflow: visible;
+      float: left;
 
       .album-art-image {
+        z-index: 10;
         width: 245px;
         height: 245px;
         transition: transform 0.3s ease-in-out;
@@ -59,6 +62,7 @@
         transform: scale(1.05);
         transition-duration: 0.3s;
       }
+      
     }
     .artist-name {
       font-weight: bolder;

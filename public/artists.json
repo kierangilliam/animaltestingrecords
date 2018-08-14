@@ -2,9 +2,9 @@
 {
   "name": "7-11 Jesus",
   "images": [
-    "https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/36919751_221694765122382_8700904486660472832_n.png?_nc_cat=0&oh=ad551ff73b40f794ab636bd47026f005&oe=5BC930FC"
+    "/images/7-11-jesus/band-photos/main.JPG"
   ],
-  "id": "",
+  "id": "7-11-jesus",
   "bandcamp": "",
   "location": {
     "state": "California",
@@ -14,7 +14,7 @@
   "albums": [
     {
       "name": "Oh No",
-      "id": "",
+      "id": "oh-no",
       "type": "ep",
       "release_date": "3-3-2018",
       "image_src": "https://f4.bcbits.com/img/a3639367953_2.jpg",
