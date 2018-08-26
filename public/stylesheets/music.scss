@@ -1,6 +1,6 @@
 @import 'variables';
 
-#albums {
+.albums {
   z-index: 100;
   line-height: 28px;
   display: flex;
@@ -62,7 +62,19 @@
         transform: scale(1.05);
         transition-duration: 0.3s;
       }
-      
+      .hidden-image {
+        height: 55%;
+        z-index: -1;
+        position: absolute;
+        transition: .5s ease;
+        top: 10%;
+        right: 10%;
+      }
+      &:hover .hidden-image {
+        transform: rotate(40deg);
+        top: -20%;
+        right: -40%;
+      }
     }
     .artist-name {
       font-weight: bolder;

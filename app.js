@@ -19,6 +19,7 @@ var hbs = require('hbs');
 hbs.registerHelper('breaklines', function(text) {
   text = hbs.Utils.escapeExpression(text);
   text = text.replace(/(\r\n|\n|\r)/gm, '<br><br>');
+  text = text.replace(/(\t)/gm, '&nbsp;&nbsp;&nbsp;&nbsp;');
   return new hbs.SafeString(text);
 });
 

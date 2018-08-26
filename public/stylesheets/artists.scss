@@ -16,7 +16,9 @@
     @media (min-width: 62rem) {
       flex-basis: 20.5%;
     }
-
+    .artist-image-wrapper, .name {
+      cursor: pointer;
+    }
     .artist-image-wrapper, .name, .location {
       padding-top: 0;
       padding-bottom: 0;

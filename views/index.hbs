@@ -4,23 +4,13 @@
     <!-- # TODO section titles rotate and pop out an animal at hover -->
     <h2>MUSIC</h2>
   </div>
-  <div id="albums">
+  <div class="albums">
       {{#each artists}}
         {{#each albums}}
-          <div class="card-album album" id={{id}} onclick="location.href='www.animaltestingrecords.co/albums/{{id}}';">
+          <div class="card-album album" id={{@../key}} onclick="location.href='/artists/{{@../key}}';">
             <div class="album-art">
               <img class="album-art-image" src="{{image_src}}">
               <img class="hidden-image" src="images/animals/monkey.png">
-              <style>
-              .hidden-image {
-                height: 55%;
-                z-index: -1;
-                position: absolute;
-                transition: .5s ease;
-              }
-
-              </style>
-              <p>{{{pick_random_animal_position}}}</p>
             </div>
             <p class="artist-name">{{../name}}</p>
             <p class="album-name">{{name}}</p>

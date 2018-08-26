@@ -1,10 +1,10 @@
-[
 {
+"7-11_jesus" : {
   "name": "7-11 Jesus",
+  "biography": "\t7-11 Jesus is a three piece slurpee rock back from San Francisco. They initially formed after August Darula (Guitar/vocals)  and Kieran Gill (Drums/moral support) fumbled around searching for sacred riff of all rock, in the dimly lit basement of Music City. After nearly a half a year of scattered practices and jam sessions, a band name was found and with that band name came riffs, hi-hat ticks, and bass licks as holy as Jesus himself. 7-11 Jesus was thenceforth birthed in the tumultuous slopes of San Francisco in the year of 2017.  Emma Jacobson (Bass/shoe-tying) solidified the three-piece sonic concoction that is now 7-11 Jesus with her ability - and devotion - to slap-a-dah-bass.\n\tThese three young musicians have gone on to play their first few shows as well as produce their first EP in 2018. Their first EP titled “Oh No” combines both loud and soft moments with angular riffs, hot snare flicks, and a thick stream of steady bass plucks that all help ferment the three piece into one solid stream of sound (uncarbonated). Sonically the album floats between punk rock, garage rock, and psychedelic rock while occupying terrains that have yet to be discovered. Strange riffs, unique drumming, and pulverizing bass lines push 7-11 Jesus in a direction that is their own - it’s up to the listener to determine whether or not that is a good or bad direction. \n\t As their yearning for the tastiest riffs, jams, and slaps continues to devour their musical devotion 7-11 Jesus is on the cusp of releasing another EP/LP within 2018. As they begin to blend their influences together to create an even tastier concoction (or Slurpee) than their past EP, they find themselves writing more ambitious songs that will surely result in head-banging, crying, and possibly neither (or both) of those outcomes.",
   "images": [
-    "/images/7-11-jesus/band-photos/main.JPG"
+    "/images/7-11_jesus/band-photos/main.JPG"
   ],
-  "id": "7-11-jesus",
   "bandcamp": "",
   "location": {
     "state": "California",
@@ -14,19 +14,18 @@
   "albums": [
     {
       "name": "Oh No",
-      "id": "oh-no",
+      "id": "oh_no",
       "type": "ep",
       "release_date": "3-3-2018",
       "image_src": "https://f4.bcbits.com/img/a3639367953_2.jpg",
-      "music_path": "oh-no",
+      "music_path": "oh_no",
       "description": "",
       "bandcamp": ""
     }
   ]
 },
-{
+"lost_henry" : {
   "name": "Lost Henry",
-  "id": "",
   "images": [
     "https://f4.bcbits.com/img/0013488165_10.jpg"
   ],
@@ -49,9 +48,8 @@
     }
   ]
 },
-{
+"the_rift": {
   "name": "The Rift",
-  "id": "",
   "images": [
     "https://f4.bcbits.com/img/0011949425_10.jpg"
   ],
@@ -74,12 +72,11 @@
     }
   ]
 },
-{
+"7-11-henry": {
   "name": "7-11 Henry",
   "images": [
     ""
   ],
-  "id": "",
   "bandcamp": "",
   "location": {
     "state": "Ohio",
@@ -99,7 +96,7 @@
     }
   ]
 },
-{
+"lost-jesus": {
   "name": "Lost Jesus",
   "id": "",
   "images": [
@@ -124,7 +121,7 @@
     }
   ]
 },
-{
+"the-rift-1": {
   "name": "The Rift 1.0",
   "id": "",
   "images": [
@@ -149,7 +146,7 @@
     }
   ]
 },
-{
+"the-rift-2": {
   "name": "The Rift 2.0",
   "id": "",
   "images": [
@@ -174,4 +171,4 @@
     }
   ]
 }
-]
+}

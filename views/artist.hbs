@@ -1,0 +1,46 @@
+<div class="title-wrapper">
+    <div class="artist-page-title">
+    <h2>{{artist.name}}</h2>
+    </div>
+</div>
+<div id="main">
+    <div class="artist">
+        <div class="artist-image-wrapper">
+            <img class="artist-image" src="{{artist.images.[0]}}">
+        </div>
+        <div class="info">
+            <p class="location">{{artist.location.city}}, {{artist.location.state}}</p>
+            <p class="biography">{{breaklines artist.biography}}</p>
+        </div>
+    </div>
+    <div class="discography">
+        <div class="section-title">
+          <h2>DISCOGRAPHY</h2>
+        </div>
+        <div class="albums">
+          {{#each artist.albums}}
+            <div class="card-album album" id={{id}} onclick="location.href='www.animaltestingrecords.co/albums/{{id}}';">
+              <div class="album-art">
+                <img class="album-art-image" src="{{image_src}}">
+                <img class="hidden-image" src="images/animals/monkey.png">
+                <style>
+                .hidden-image {
+                  height: 55%;
+                  z-index: -1;
+                  position: absolute;
+                  transition: .5s ease;
+                }
+
+                </style>
+                <p>{{{pick_random_animal_position}}}</p>
+              </div>
+              <p class="artist-name">{{../name}}</p>
+              <p class="album-name">{{name}}</p>
+            </div>
+          {{/each}}
+      </div>
+    </div>
+</div>
+
+<link rel='stylesheet' href='/stylesheets/music.css' />
+<link rel='stylesheet' href='/stylesheets/artist.css' />

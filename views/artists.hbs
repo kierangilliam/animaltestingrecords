@@ -4,8 +4,8 @@
   </div>
   <div class="artists">
     {{#each artists}}
-      <div class="artist" id={{id}} onclick="location.href='www.animaltestingrecords.co/albums/{{id}}';">
-        <div class="artist-image-wrapper">          
+      <div class="artist" id={{@key}} onclick="location.href='/artists/{{@key}}';">
+        <div class="artist-image-wrapper">
           <img class="artist-image" src="{{images.[0]}}">
         </div>
         <div class="info">

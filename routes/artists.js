@@ -2,9 +2,20 @@ var express = require('express');
 var router = express.Router();
 var artists = require('../public/artists.json');
 
-/* GET home page. */
+/* GET artists. */
 router.get('/', function(req, res, next) {
-  res.render('artists', { title: 'Artists', artists: artists });
+    res.render('artists', { title: 'Artists', artists: artists });
+});
+
+/* GET specific artist. */
+router.get('/:artist_id', function(req, res, next) {
+
+    var artist_id = req.params.artist_id;
+
+    if (artist_id in artists) {
+        artist = artists[artist_id]
+        res.render('artist', { title: artist.name, artist: artist });
+    }
 });
 
 module.exports = router;
