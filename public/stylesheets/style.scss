@@ -31,7 +31,6 @@ a:visited { color: inherit;        }
 }
 
 .header {
-
   font-family: 'Oswald', sans-serif;
 
   position: fixed;
@@ -237,9 +236,40 @@ a:visited { color: inherit;        }
 }
 
 .footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Oswald', sans-serif;
   background-color: black;
   margin-top: 3em;
-  height: 15em;
+  height: 350px;
   bottom: 0;
-  display: block;
+  padding-left: 50px;
+  padding-right: 150px;
+
+  .logo {
+    flex: 1;
+    #footer-logo {
+      -webkit-box-shadow: inset 7px 7px 0px 0px rgba(0,0,0,0.1);
+      -moz-box-shadow: inset 7px 7px 0px 0px rgba(0,0,0,0.1);
+      box-shadow: inset 7px 7px 0px 0px rgba(0,0,0,0.1);
+      padding: 20px;
+      background: lighten(#528ff2, 15%);
+      height: 200px;
+    }
+    p {
+      font-size: 12px;
+      color: white;
+    }
+  }
+  .links {
+    flex: 4;
+    text-align: right;
+    font-size: 30px;
+    a {
+      color: white;
+      text-shadow: 2px 2px lighten(#528ff2, 15%);
+    }
+  }
 }

@@ -1,23 +1,29 @@
 <div id="main">
 
   <div class="section-title">
-    <!-- # TODO section titles rotate and pop out an animal at hover -->
     <h2>MUSIC</h2>
   </div>
   <div class="albums">
       {{#each artists}}
-        {{#each albums}}
+        {{#each discography}}
           <div class="card-album album" id={{@../key}} onclick="location.href='/artists/{{@../key}}';">
             <div class="album-art">
               <img class="album-art-image" src="{{image_src}}">
-              <img class="hidden-image" src="images/animals/monkey.png">
+              <img class="hidden-image" src="/images/animals/monkey.png">
             </div>
             <p class="artist-name">{{../name}}</p>
             <p class="album-name">{{name}}</p>
           </div>
         {{/each}}
       {{/each}}
-      <!-- Padding album so that there is an even number of albums -->
+      <!-- Padding album so that there is a %4 number of albums -->
+      <div class="card-album album" style="cursor: default; opacity: 0;" id="blank-boi">
+        <div class="album-art">
+          <img class="album-art-image" src="">
+        </div>
+        <p class="artist-name"></p>
+        <p class="album-name"></p>
+      </div>
       <div class="card-album album" style="cursor: default; opacity: 0;" id="blank-boi">
         <div class="album-art">
           <img class="album-art-image" src="">

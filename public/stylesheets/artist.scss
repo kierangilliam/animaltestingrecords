@@ -29,7 +29,11 @@
   display: flex;
 
   .discography {
-      flex: 2;;
+      flex: 2;
+      .album-art {
+        height: 245px;
+        margin-bottom: 5px;
+      }
   }
 
   .artist {

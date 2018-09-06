@@ -18,21 +18,11 @@
           <h2>DISCOGRAPHY</h2>
         </div>
         <div class="albums">
-          {{#each artist.albums}}
-            <div class="card-album album" id={{id}} onclick="location.href='www.animaltestingrecords.co/albums/{{id}}';">
+          {{#each artist.discography}}
+            <div class="card-album album" id={{id}} onclick="window.open('{{bandcamp}}', '_blank').focus();">
               <div class="album-art">
                 <img class="album-art-image" src="{{image_src}}">
-                <img class="hidden-image" src="images/animals/monkey.png">
-                <style>
-                .hidden-image {
-                  height: 55%;
-                  z-index: -1;
-                  position: absolute;
-                  transition: .5s ease;
-                }
-
-                </style>
-                <p>{{{pick_random_animal_position}}}</p>
+                <img class="hidden-image" src="/images/animals/monkey.png">
               </div>
               <p class="artist-name">{{../name}}</p>
               <p class="album-name">{{name}}</p>
