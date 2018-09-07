@@ -19,7 +19,7 @@
         </div>
         <div class="albums">
           {{#each artist.discography}}
-            <div class="card-album album" id={{id}} onclick="window.open('{{bandcamp}}', '_blank').focus();">
+            <div class="card-album album" id={{@key}} onclick="window.open('{{bandcamp}}', '_blank').focus();">
               <div class="album-art">
                 <img class="album-art-image" src="{{image_src}}">
                 <img class="hidden-image" src="/images/animals/monkey.png">

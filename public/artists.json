@@ -10,19 +10,16 @@
     "state": "California",
     "city": "San Francisco"
   },
-  "description": "",
-  "discography": [
-    {
+  "discography": {
+    "oh_no": {
       "name": "Oh No",
-      "id": "oh_no",
       "type": "ep",
       "release_date": "3-3-2018",
       "image_src": "https://f4.bcbits.com/img/a3639367953_2.jpg",
-      "music_path": "oh_no",
       "description": "",
       "bandcamp": "https://7-11jesus.bandcamp.com/album/oh-no"
     }
-  ]
+  }
 },
 "the_rift": {
   "name": "The Rift",
@@ -35,18 +32,16 @@
     "city": "Bowling Green"
   },
   "biography": "The Rift is an experimental rock band from Bowling Green, KY, which consists of four sweet boys who are just trying to do their best. \nThese sweet boys are: \nKai Rogers, Guitar/Vocals\nSpencer Woods, Piano/Vocals\nColton Turley, Bass\nYan Garza, Drums",
-  "discography" : [
-    {
+  "discography" : {
+    "wasteland_flaming_sun": {
       "name": "Wasteland Flaming Sun",
       "type": "album",
-      "id": "",
       "image_src": "/images/the_rift/discography/wasteland_flaming_sun.jpg",
       "release_date": "3-30-2018",
-      "music_path": "wasteland_flaming_sun",
       "description": "",
       "bandcamp": "https://therift420.bandcamp.com/album/wasteland-flaming-sun"
     }
-  ]
+  }
 },
 "lost_henry" : {
   "name": "Lost Henry",
@@ -59,28 +54,24 @@
     "city": "Cincinnati"
   },
   "biography": "Lost Henry is a 5 piece pop punk/emo band from Highland Heights, KY. They met at Northern Kentucky University, building an audience there before breaking into their local scene. The band is currently finishing their debut EP with producer Eric Tuffendsam (The Wonder Years, Close To Home, Harbour) at Moonlight Studios in Fairfield, Ohio. Their first two singles, “Misfit” and “Thanks For Coming” are available on all streaming services now!",
-  "discography" : [
-    {
+  "discography" : {
+    "misfit": {
       "name": "Misfit",
       "type": "single",
-      "id": "",
       "image_src": "https://f4.bcbits.com/img/a1314587121_16.jpg",
       "release_date": "1-3-2017",
-      "music_path": "misfit",
       "description": "",
       "bandcamp": "https://losthenry.bandcamp.com/track/misfit"
     },
-    {
+    "thanks_for_coming": {
       "name": "Thanks for Coming",
       "type": "single",
-      "id": "",
       "image_src": "/images/lost_henry/discography/thanks_for_coming.jpeg",
       "release_date": "8-24-2018",
-      "music_path": "thanks_for_coming",
       "description": "",
-      "bandcamp": ""
+      "bandcamp": "https://losthenry.bandcamp.com/track/thanks-for-coming"
     }
-  ]
+  }
 },
 "pinto": {
   "name": "Pinto",
@@ -93,24 +84,22 @@
     "city": "Oakland"
   },
   "biography": "",
-  "discography": [
-    {
+  "discography": {
+    "pinto": {
       "name": "Pinto",
-      "id": "",
       "type": "album",
       "release_date": "8-9-2017",
       "image_src": "https://f4.bcbits.com/img/a1970063995_16.jpg",
-      "music_path": "pinto",
       "description": "",
       "bandcamp": "https://pinto2.bandcamp.com/album/pinto"
     }
-  ]
+  }
 },
 "milk": {
   "name": "Milk",
   "id": "",
   "images": [
-    ""
+    "/images/milk/band_photos/main.jpg"
   ],
   "bandcamp": "https://milksf.bandcamp.com/",
   "location": {
@@ -118,17 +107,15 @@
     "city": "San Francisco"
   },
   "biography": "Milk is a San Francisco garage rock band. Milk started when Kat (guitar) and Lucya (drums) replied to an ad on craigslist that Johnny (bass, vocals) put up. Kat brought in her guitarist friend from college, Olivia. During their time together they released Another Great Smell in the City, played several colleges, and opened for T-Pain. Many have refered to their music as \"90's cartoons for your ears.\" ",
-  "discography" : [
-    {
+  "discography" : {
+    "another_great_smell_in_the_city": {
       "name": "Another Great Smell in the City",
       "type": "ep",
-      "id": "",
       "image_src": "https://f4.bcbits.com/img/a1155977700_16.jpg",
       "release_date": "7-2-2017",
-      "music_path": "another_great_smell_in_the_city",
       "description": "",
       "bandcamp": "https://milksf.bandcamp.com/album/another-great-smell-in-the-city"
     }
-  ]
+  }
 }
 }

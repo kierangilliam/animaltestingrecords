@@ -86,6 +86,7 @@ a:visited { color: inherit;        }
       -webkit-margin-before: 0em !important;
       -webkit-margin-after: 0em !important;
       margin: auto;
+      font-size: 20px;
     }
 
     .header-link {
@@ -251,15 +252,15 @@ a:visited { color: inherit;        }
   .logo {
     flex: 1;
     #footer-logo {
-      -webkit-box-shadow: inset 7px 7px 0px 0px rgba(0,0,0,0.1);
-      -moz-box-shadow: inset 7px 7px 0px 0px rgba(0,0,0,0.1);
-      box-shadow: inset 7px 7px 0px 0px rgba(0,0,0,0.1);
+      // -webkit-box-shadow: inset 7px 7px 0px 0px rgba(0,0,0,0.1);
+      // -moz-box-shadow: inset 7px 7px 0px 0px rgba(0,0,0,0.1);
+      // box-shadow: inset 7px 7px 0px 0px rgba(0,0,0,0.1);
+      // background: lighten(#528ff2, 15%);
       padding: 20px;
-      background: lighten(#528ff2, 15%);
       height: 200px;
     }
     p {
-      font-size: 12px;
+      font-size: 14px;
       color: white;
     }
   }
@@ -269,7 +270,7 @@ a:visited { color: inherit;        }
     font-size: 30px;
     a {
       color: white;
-      text-shadow: 2px 2px lighten(#528ff2, 15%);
+      // text-shadow: 2px 2px lighten(#528ff2, 15%);
     }
   }
 }
