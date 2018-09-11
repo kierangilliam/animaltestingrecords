@@ -26,13 +26,37 @@
 }
 
 #main {
-  display: flex;
+  /* Large screens */
+  @media all and (min-width: 768px) {
+    display: flex;
+  }
 
   .discography {
       flex: 2;
+
+      /* Small screens */
+      @media all and (max-width: 768px) {
+        margin-top: 65px;
+      }
+
       .album-art {
-        height: 245px;
         margin-bottom: 5px;
+
+        /* Large screens */
+        @media all and (min-width: 768px) {
+          height: 245px;
+        }
+
+        /* Small screens */
+        @media all and (max-width: 768px) {
+          .hidden-image {
+            display: none;
+          }
+          img {
+            height: 100%;
+            width: 100%;
+          }
+        }
       }
   }
 
@@ -52,9 +76,13 @@
       flex: 7;
       overflow: hidden;
 
-      height: 340px;
-      width: 490px;
       margin-bottom: 5px;
+
+      /* Large screens */
+      @media all and (min-width: 768px) {
+        height: 340px;
+        width: 490px;
+      }
 
       .artist-image:hover {
         transform: scale(1.05);
@@ -85,8 +113,11 @@
         font-size: .9em;
       }
       .biography {
-        margin-top: 45px;
-        padding-right: 100px;
+        /* Large screens */
+        @media all and (min-width: 768px) {
+          margin-top: 45px;
+          padding-right: 100px;
+        }
       }
     }
   }
