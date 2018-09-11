@@ -4,10 +4,22 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
+  /* Small screens */
+  @media all and (max-width: 768px) {
+    #blank-boi {
+      display: none;
+    }
+  }
+
   .artist {
     margin-bottom: 5%;
     display: flex;
     flex-direction: column;
+
+    /* Small screens */
+    @media all and (max-width: 768px) {
+      margin-bottom: 10%;
+    }
 
     @media (min-width: 48rem) {
       flex-basis: 49%;
@@ -32,7 +44,6 @@
       overflow: hidden;
 
       height: 170px;
-      width: 245px;
       margin-bottom: 5px;
 
       .artist-image:hover {

@@ -14,7 +14,7 @@ router.get('/:artist_id', function(req, res, next) {
 
     if (artist_id in artists) {
         artist = artists[artist_id]
-        res.render('artist', { title: artist.name, artist: artist });
+        res.render('artist', { title: artist.name + ' | Artists', artist: artist });
     }
 });
 

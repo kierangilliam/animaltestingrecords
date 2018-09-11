@@ -55,38 +55,76 @@ a:visited { color: inherit;        }
 
   #headmast {
     color: white;
-    margin-left: 80px;
     -webkit-margin-before: 0em !important;
     -webkit-margin-after: 0em !important;
+    -webkit-padding-start: 0em !important;
+    margin-left: 20px;
     display: flex;
+
+    /* Medium to large screens */
+    @media all and (min-width: 768px) {
+      margin-left: 80px;
+    }
+
     h1 {
       font-size: 23px;
       margin: auto;
     }
   }
 
+  #mobile-button {
+
+    #mobile-logo {
+      height: 50px;
+    }
+
+    /* Medium to large screens */
+    @media all and (min-width: 768px) {
+      display: none;
+    }
+
+    &:active + .navigation {
+      top: 50px;
+    }
+  }
+
   .navigation {
     text-align: center;
     padding: 10px;
-    margin-right: 80px;
     -webkit-margin-before: 0em !important;
     -webkit-margin-after: 0em !important;
 
     list-style: none;
 
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
+    /* Medium to large screens */
+    @media all and (min-width: 768px) {
+      margin-right: 80px;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
 
-    -webkit-flex-flow: row wrap;
+      -webkit-flex-flow: row wrap;
+    }
+
+    /* Small screens */
+    @media all and (max-width: 768px) {
+      margin-right: 0px;
+      position: fixed;
+      top: -100px;
+      right: 0px;
+      z-index: -10;
+      -webkit-box-shadow: -5px 5px 0px 0px rgba(0,0,0,0.1);
+      -moz-box-shadow: -5px 5px 0px 0px rgba(0,0,0,0.1);
+      box-shadow: -5px 5px 0px 0px rgba(0,0,0,0.1);
+    }
 
     h3 {
       -webkit-margin-before: 0em !important;
       -webkit-margin-after: 0em !important;
       margin: auto;
-      font-size: 20px;
+      font-size: 21px;
     }
 
     .header-link {
@@ -95,11 +133,17 @@ a:visited { color: inherit;        }
       padding-right: 1em;
       display: flex;
 
+      /* Small screens */
+      @media all and (max-width: 768px) {
+        background: #1c1c1c;//#e1e6ef;
+      }
+
       a {
         margin: auto;
         text-decoration: none;
         color: white;
       }
+
       img {
         margin-left: -25px;
         position: absolute;
@@ -108,6 +152,10 @@ a:visited { color: inherit;        }
         z-index: -100;
         background-color: #528ff2;
         transition: .5s ease;
+
+        @media all and (max-width: 768px) {
+          display: none;
+        }
       }
       a:hover {
         color: darken(#e1e6ef, 4%);
@@ -237,37 +285,79 @@ a:visited { color: inherit;        }
 }
 
 .footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
   font-family: 'Oswald', sans-serif;
   background-color: black;
   margin-top: 3em;
   height: 350px;
   bottom: 0;
-  padding-left: 50px;
-  padding-right: 150px;
+
+  /* Medium to large screens */
+  @media all and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 150px;
+  }
 
   .logo {
     flex: 1;
-    #footer-logo {
-      // -webkit-box-shadow: inset 7px 7px 0px 0px rgba(0,0,0,0.1);
-      // -moz-box-shadow: inset 7px 7px 0px 0px rgba(0,0,0,0.1);
-      // box-shadow: inset 7px 7px 0px 0px rgba(0,0,0,0.1);
-      // background: lighten(#528ff2, 15%);
-      padding: 20px;
-      height: 200px;
+
+    /* Medium to large screens */
+    @media all and (min-width: 768px) {
+      order: 0;
     }
+
+    #footer-logo {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 20px;
+      height: 200px;
+
+      /* Small screens */
+      @media all and (max-width: 768px) {
+        margin-top: -15px;
+      }
+    }
+
     p {
       font-size: 14px;
-      color: white;
+      text-align: center;
+
+      /* Small screens */
+      @media all and (max-width: 768px) {
+        margin-top: -20px;
+        margin-bottom: 20px;
+      }
+
+      /* Medium to large screens */
+      @media all and (min-width: 768px) {
+        color: white;
+      }
     }
   }
   .links {
     flex: 4;
-    text-align: right;
     font-size: 30px;
+
+    /* Small screens */
+    @media all and (max-width: 768px) {
+      padding-top: 5px;
+      text-align: center;
+      ul {
+        -webkit-margin-after: 0;
+        -webkit-margin-before: 0;
+        -webkit-padding-start: 0;
+      }
+    }
+
+    /* Medium to large screens */
+    @media all and (min-width: 768px) {
+      text-align: right;
+      order: 1;
+    }
+
     a {
       color: white;
       // text-shadow: 2px 2px lighten(#528ff2, 15%);

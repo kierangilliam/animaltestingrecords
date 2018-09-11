@@ -7,12 +7,24 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
+  /* Medium to small screens */
+  @media all and (max-width: 768px) {
+    #blank-boi {
+      display: none;
+    }
+  }
+
   .card-album {
     cursor: pointer;
     background-color: white;
     width: 100%;
     margin-bottom: 5%;
     box-sizing: border-box;
+
+    /* Medium to small screens */
+    @media all and (max-width: 768px) {
+      margin-bottom: 10%;
+    }
 
     font-size: 20px !important;
     color: black !important;
@@ -53,6 +65,13 @@
         z-index: 10;
         width: 245px;
         height: 245px;
+
+        /* Medium to small screens */
+        @media all and (max-width: 768px) {
+          height: inherit;
+          width: 100%;
+        }
+
         transition: transform 0.3s ease-in-out;
         -o-transition: transform 0.3s ease-in-out;
         -ms-transition: transform 0.3s ease-in-out;
