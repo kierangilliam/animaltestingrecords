@@ -4,7 +4,7 @@ var artists = require('../public/artists.json');
 
 /* GET artists. */
 router.get('/', function(req, res, next) {
-    res.render('artists', { title: 'Artists', artists: artists });
+    res.render('artists', { title: 'Artists | Animal Testing Records', artists: artists });
 });
 
 /* GET specific artist. */
