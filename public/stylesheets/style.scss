@@ -10,7 +10,10 @@ body {
 }
 
 a         { text-decoration: none; }
-a:visited { color: inherit;        }
+a:visited { text-decoration: none; color: inherit; }
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none; }
 
 .wrapper {
   display: flex;
@@ -60,6 +63,7 @@ a:visited { color: inherit;        }
     -webkit-padding-start: 0em !important;
     margin-left: 20px;
     display: flex;
+    text-decoration: none;
 
     /* Medium to large screens */
     @media all and (min-width: 768px) {
@@ -69,6 +73,11 @@ a:visited { color: inherit;        }
     h1 {
       font-size: 23px;
       margin: auto;
+
+      /* Super small screens */
+      @media all and (max-width: 330px) {
+        font-size: 20px;
+      }
     }
   }
 

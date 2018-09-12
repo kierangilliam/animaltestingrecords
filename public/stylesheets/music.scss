@@ -33,6 +33,10 @@
       flex-basis: 49%;
     }
 
+    @media (min-width: 53rem) {
+      flex-basis: 15.5%;
+    }
+
     @media (min-width: 62rem) {
       flex-basis: 15.5%;
     }
