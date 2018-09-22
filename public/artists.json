@@ -76,14 +76,14 @@
 "pinto": {
   "name": "Pinto",
   "images": [
-    ""
+    "/images/pinto/band_photos/main.jpg"
   ],
   "bandcamp": "https://pinto2.bandcamp.com/",
   "location": {
     "state": "California",
     "city": "Oakland"
   },
-  "biography": "",
+  "biography": "The Pinto boys are a hodge-podge group of fellas that all grew up in the same hometown and reconnected in 2017 to play some rock n roll in Oakland, Ca. Pinto's been making friends and having a good ol' time playing shows in the East Bay and San Francisco.",
   "discography": {
     "pinto": {
       "name": "Pinto",
