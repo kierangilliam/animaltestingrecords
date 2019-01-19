@@ -10,6 +10,7 @@ var index = require('./routes/index');
 var artists = require('./routes/artists');
 var contact = require('./routes/contact');
 var blog = require('./routes/blog');
+var merch = require('./routes/merch');
 
 var app = express();
 
@@ -22,6 +23,13 @@ hbs.registerHelper('breaklines', function(text) {
   text = text.replace(/(\r\n|\n|\r)/gm, '<br><br>');
   text = text.replace(/(\t)/gm, '&nbsp;&nbsp;&nbsp;&nbsp;');
   return new hbs.SafeString(text);
+});
+hbs.registerHelper('get_length', function (obj) {
+    // if dict
+    if (obj.constructor == Object) {
+        return Object.keys(obj).length;
+    }
+    return obj.length;
 });
 
 // uncomment after placing your favicon in /public
@@ -42,6 +50,7 @@ app.use('/', index);
 app.use('/artists', artists);
 app.use('/blog', blog);
 app.use('/contact', contact);
+app.use('/merch', merch);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

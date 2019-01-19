@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mixins';
 
 $stripe-height: 10px;
 
@@ -155,10 +156,17 @@ a:hover, a:active { text-decoration: none; }
         color: white;
       }
 
+      &#merch {
+          img {
+              width: 120px;
+              @include rotate(-90deg);
+          }
+      }
+
       img {
         margin-left: -25px;
         position: absolute;
-        bottom: 100%;
+        bottom: 150%;
         width: 100px;
         z-index: -100;
         background-color: #528ff2;
@@ -215,11 +223,15 @@ a:hover, a:active { text-decoration: none; }
 
 .section-title {
   font-family: 'Oswald', sans-serif;
-  border-bottom: 2px solid black;
-  margin-bottom: 15px;
   padding-left: 0;
   padding-right: 0;
   text-transform: uppercase;
+  margin-bottom: 15px;
+  border-bottom: 2px solid rgba(0,0,0,1);
+
+  &.no-border {
+      border-bottom: 0px solid rgba(0,0,0,1);
+  }
 
   h2 {
     border: 2px solid rgba(0,0,0,0.05);
@@ -238,6 +250,18 @@ a:hover, a:active { text-decoration: none; }
     color: white;
     background-color: #1c1c1c;
     font-weight: 500;
+  }
+
+  h3 {
+      font-size: 22px;
+      background: black;
+      color: white;
+      padding: 6px;
+      padding-left: 12px;
+      -webkit-margin-before: 0em;
+      -webkit-margin-after: .33em;
+      -webkit-margin-start: 0em;
+      -webkit-margin-end: .33em;
   }
 }
 

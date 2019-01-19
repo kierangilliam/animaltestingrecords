@@ -11,15 +11,15 @@
     "city": "San Francisco"
   },
   "discography": {
-    "oh_no": {
-      "name": "Oh No",
-      "type": "ep",
-      "release_date": "3-3-2018",
-      "image_src": "https://f4.bcbits.com/img/a3639367953_2.jpg",
-      "description": "",
-      "bandcamp": "https://7-11jesus.bandcamp.com/album/oh-no"
+      "oh_no": {
+          "name": "Oh No",
+          "type": "ep",
+          "release_date": "3-3-2018",
+          "image_src": "https://f4.bcbits.com/img/a3639367953_2.jpg",
+          "description": "",
+          "bandcamp": "https://7-11jesus.bandcamp.com/album/oh-no"
+      }
     }
-  }
 },
 "the_rift": {
   "name": "The Rift",

@@ -1,12 +1,14 @@
 /* Colors */
 $orange: #FF9920;
-$dark-orange: #ce7736; 
+$dark-orange: #ce7736;
 $green: #079d7c;
 $dark-green: #006757;
 $red: #fc213f;
 $dark-red: #b2112e;
 $light-blue: #d1edff;
 $dark-blue: #2F486E;
+$light-gray: #f5f5f5;
+$blue-accent: #528ff2;
 
 /* Screen sizes */
 $screen-small: 500px;
@@ -27,6 +29,6 @@ $screen-large: 1200px;
 }
 
 @mixin stroke-and-shadow($stroke, $color, $dark-color) {
-  text-shadow: stroke($stroke, $color), 
+  text-shadow: stroke($stroke, $color),
   $stroke*2px $stroke*1.75px 0px $dark-color, $stroke*1.75px $stroke*2px 0px $dark-color;
 }
