@@ -1,0 +1,198 @@
+@import 'mixins';
+@import 'variables';
+
+@mixin fan-images($child-count) {
+    $x : 20;
+    $x_adder : 60 / $child-count;
+    $rotation : 90 / $child-count * -1;
+    $rotation_adder : 90 / ($child-count - 1);
+    @for $i from 0 to $child-count {
+        &:hover img:nth-child(#{$i + 1}) {
+            transform: rotate(#{$rotation/2}deg)
+                       translateX($x * 1%)
+                       translateY((-15 - ($x/2)) * 1%)
+                       scale(1.25);
+            transition-duration: 0.3s;
+        }
+
+        img:nth-child(#{$i + 1}) {
+            transform: translateX($x * 1%)
+                        rotate(#{$rotation/4}deg)
+                        scale(1.25);
+        }
+
+        $rotation : $rotation + $rotation_adder;
+        $x : $x + $x_adder;
+    }
+}
+
+.container {
+    /* Large screens */
+    @media all and (min-width: 768px) {
+      display: flex;
+    }
+}
+
+.left-panel {
+    flex: 2;
+    margin-right: 45px;
+    .artists {
+        .artist {
+            display: flex;
+            flex-flow: row nowrap;
+            @include transition(transform 0.3s ease-in-out);
+            &:hover .name {
+                cursor: pointer;
+                transition-duration: 0.3s;
+                transform: translateX(5%);
+            }
+            &:hover .selector {
+                transition: 0.3s;
+                flex-grow: 2;
+            }
+            .name {
+                flex: 18;
+                margin-block-start: 0.73em;
+                margin-block-end: 0.73em;
+            }
+            .selector {
+                flex: 1;
+                background-color: $light-gray;
+                margin-right: 5px;
+            }
+            &.selected {
+                .selector {
+                    transition: 0.55s;
+                    background-color: $blue-accent;
+                }
+            }
+        }
+    }
+}
+
+.main {
+    flex: 10;
+}
+
+.latest-container {
+
+    line-height: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    #blank-boi {
+        cursor: default;
+        opacity: 0;
+    }
+
+    /* Small screens */
+    @media all and (max-width: 768px) {
+      #blank-boi {
+        display: none;
+      }
+    }
+
+    .product {
+        margin-bottom: 5%;
+        display: flex;
+        flex-direction: column;
+
+        /* Small screens */
+        @media all and (max-width: 768px) {
+          margin-bottom: 10%;
+        }
+
+        @media (min-width: 48rem) {
+          flex-basis: 49%;
+        }
+
+        @media (min-width: 62rem) {
+          flex-basis: 20.5%;
+        }
+
+        .prodict-image-wrapper, .name {
+          cursor: pointer;
+        }
+
+        .prodict-image-wrapper, .name, .brand {
+          padding-top: 0;
+          padding-bottom: 0;
+          -webkit-margin-before: 0em;
+          -webkit-margin-after: 0em;
+          -webkit-margin-start: 0px;
+          -webkit-margin-end: 0px;
+        }
+
+        .product-image-wrapper, .product-image-wrapper-variations {
+          flex: 7;
+          height: 170px;
+          margin-bottom: 5px;
+
+          .product-image {
+              height: 100%;
+          }
+        }
+
+        .product-image-wrapper {
+            overflow: hidden;
+            .product-image:hover {
+              transform: rotate(-10deg) translateY(5%);
+              transition-duration: 0.3s;
+            }
+
+            .product-image {
+              @include transition(transform 0.3s ease-in-out);
+              transform: translateY(35%);
+              object-fit: cover;
+            }
+        }
+
+        .product-image-wrapper-variations {
+            position: relative;
+            z-index: 1;
+
+            @include transition(transform 0.3s ease-in-out);
+            transform: translateY(35%);
+
+            .product-image {
+                position: absolute;
+            }
+
+            // default, over 5 varitions
+            &.product-variations   { @include fan-images(6); }
+            &.product-variations-2 { @include fan-images(2); }
+            &.product-variations-3 { @include fan-images(3); }
+            &.product-variations-4 { @include fan-images(4); }
+            &.product-variations-5 { @include fan-images(5); }
+        }
+
+        .info {
+          flex: 1;
+          z-index: 2;
+          background: white;
+
+          .name {
+            font-family: 'Oswald', sans-serif;
+            padding: 5px;
+            padding-left: 15px;
+            // background-color: #ef3f3f;
+            background-color: #528ff2;
+            text-transform: uppercase;
+            color: white;
+            font-size: 1.1em;
+            font-weight: bold;
+            margin-bottom: 2px;
+          }
+          .brand {
+            display: inline;
+            padding: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+            background-color: $light-gray;
+            color: #4c4c4c;
+            font-size: .7em;
+          }
+      }
+  }
+}

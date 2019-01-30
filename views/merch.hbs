@@ -1,0 +1,63 @@
+<div class="container">
+    <div class="left-panel">
+        <div class="section-title no-border">
+            <h3>Artists</h3>
+        </div>
+        <div class="artists">
+            {{#each merch.artists}}
+                <div class="artist">
+                    <div class="selector"></div>
+                    <h4 class="name">{{@key}}</h4>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $('.artist').on('click', function() {
+            $(this).toggleClass('selected');
+        })
+    </script>
+
+    <!-- TODO: No merch for this artist yet (request merch) -->
+    <!-- TODO: Animals wearing shirts -->
+
+    <div class="main">
+        <div id="latest-drops" class="section-title">
+            <h2>Latest Drops</h2>
+        </div>
+        <div class="latest-container">
+            {{#each merch.latest}}
+                <div class="product" id={{@key}} onclick="location.href='/merch/{{brand}}/{{@key}}';">
+                      {{#if variations}}
+                        <div class="product-image-wrapper-variations product-variations product-variations-{{get_length variations}}">
+                        {{#each variations}}
+                              <img class="product-image" src="{{image_src}}">
+                        {{/each}}
+                        </div>
+                      {{else}}
+                          <div class="product-image-wrapper">
+                            <img class="product-image" src="{{image_src}}">
+                          </div>
+                      {{/if}}
+                  <div class="info">
+                    <p class="name">{{name}}</p>
+                    <p class="brand">{{brand}}</p>
+                  </div>
+                </div>
+            {{/each}}
+            <div class="product" id="blank-boi">
+              <div class="product-image-wrapper">
+                <img class="product-image" src="">
+              </div>
+              <div class="info">
+                <p class="name"></p>
+                <p class="brand"></p>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<link rel='stylesheet' href='/stylesheets/merch.css' />
